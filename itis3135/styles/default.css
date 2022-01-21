@@ -5,6 +5,9 @@ body
   background-color: black;
 }
 
+a { color: lightblue; }
+a:hover { color: red; }
+
 header
 {
   font-family: Courier, serif;
