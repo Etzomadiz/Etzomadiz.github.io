@@ -1,4 +1,13 @@
-body
+body 
 {
-    color: red;
+  font-family: Tahoma, sans-serif;
+  color: silver;
+  background-color: black;
+}
+
+header
+{
+  font-family: Courier, serif;
+  text-align: center;
+  color: #CCFCCB;
 }
