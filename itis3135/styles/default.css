@@ -14,7 +14,7 @@ header
   text-align: center;
   color: #CCFCCB;
 }
-table
+table, tr, td
 {
   border-collapse: collapse;
   border-left: none;
