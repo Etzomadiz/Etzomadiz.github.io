@@ -17,6 +17,8 @@ header
 table, tr, td
 {
   border-collapse: collapse;
-  border-left: none;
-  border: white;
+  border-top: 1px solid #CCFCCB;
+  border-left: 1px solid #CCFCCB;
+  border-right: 1px solid #CCFCCB;
+  border-bottom: 1px solid #CCFCCB;
 }
