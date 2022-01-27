@@ -16,6 +16,7 @@ header
 }
 table, tr, td
 {
+  border-collapse: collapse;
   border-top: 2px solid #CCFCCB;
   border-left: 2px solid #CCFCCB;
   border-right: 2px solid #CCFCCB;
