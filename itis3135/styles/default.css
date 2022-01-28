@@ -14,7 +14,7 @@ header
   text-align: center;
   color: #CCFCCB;
 }
-table, tr, td
+table, th, td
 {
   border-collapse: collapse;
   border-top: 2px solid #CCFCCB;
