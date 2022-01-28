@@ -22,3 +22,14 @@ table, th, td
   border-right: 2px solid #CCFCCB;
   border-bottom: 2px solid #CCFCCB;
 }
+table tr:nth-child(odd)
+{
+  background-color: purple;
+}
+
+table tr:nth-child(even)
+{
+  background-color: #CBC3E3;
+  color: black;
+}
+
