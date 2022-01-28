@@ -1,0 +1,16 @@
+body 
+{
+  font-family: Tahoma, sans-serif;
+  color: silver;
+  background-image: url("itis3135/images/woodbackround.jpg");
+}
+
+a { color: lightblue; }
+a:hover { color: red; }
+
+header
+{
+  font-family: Tahoma, serif;
+  text-align: center;
+  color: #CCFCCB;
+}
