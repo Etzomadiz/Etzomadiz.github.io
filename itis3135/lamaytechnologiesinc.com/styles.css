@@ -2,7 +2,7 @@ body
 {
   font-family: Tahoma, sans-serif;
   color: silver;
-  background-image: url("itis3135/images/woodbackround.jpg");
+  background-image: url('..//images/wood-backround.jpg');
 }
 
 a { color: lightblue; }
