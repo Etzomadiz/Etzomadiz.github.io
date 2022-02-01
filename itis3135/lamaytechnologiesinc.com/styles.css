@@ -14,3 +14,11 @@ header
   text-align: center;
   color: #CCFCCB;
 }
+
+footer
+{
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  background-color: gray;
+  color: #CCFCCB;
+}
