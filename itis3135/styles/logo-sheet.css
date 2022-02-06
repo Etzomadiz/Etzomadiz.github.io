@@ -1,0 +1,10 @@
+body 
+{
+  font-family: Tahoma, sans-serif;
+  color: silver;
+  background-color: black;
+}
+
+a { color: lightblue; }
+a:hover { color: red; }
+
