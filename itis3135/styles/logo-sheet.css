@@ -1,10 +1,25 @@
 body 
 {
   font-family: Tahoma, sans-serif;
-  color: silver;
-  background-color: black;
+  color: #F78E69;
+  background-color: #12355B;
 }
 
 a { color: lightblue; }
 a:hover { color: red; }
 
+h1
+{
+    text-align: center;
+}
+
+p
+{
+    color: #9EC1A3;
+}
+
+ul
+{
+    color: #9EC1A3;
+    list-style-type: square;
+}
