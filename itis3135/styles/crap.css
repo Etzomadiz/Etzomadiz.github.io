@@ -1,0 +1,22 @@
+h1
+{
+    background-color: red;
+    color: blue;
+    font-family: monospace;
+    font-size: 300px;
+}
+ul
+{
+    text-align: center;
+    border-left-style:dotted;
+    border-right-style:dashed;
+    border-top-style:groove;
+    border-bottom-style:solid;
+    border-width: 100px;
+}
+u
+{
+    color: blue;
+
+}
+
