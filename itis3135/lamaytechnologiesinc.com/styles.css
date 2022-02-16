@@ -1,24 +1,25 @@
 body 
 {
   font-family: Tahoma, sans-serif;
-  color: silver;
-  background-image: url('..//images/wood-backround.jpg');
+  color: #F78E69;
+  background-color: #12355B;
 }
 
 a { color: lightblue; }
 a:hover { color: red; }
 
-header
+h1
 {
-  font-family: Tahoma, serif;
-  text-align: center;
-  color: #CCFCCB;
+    text-align: center;
 }
 
-footer
+p
 {
-  font-family: Tahoma, sans-serif;
-  text-align: center;
-  background-color: gray;
-  color: #CCFCCB;
+    color: #9EC1A3;
+}
+
+ul
+{
+    color: #9EC1A3;
+    list-style-type: square;
 }
