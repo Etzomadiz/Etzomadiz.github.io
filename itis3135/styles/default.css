@@ -54,3 +54,17 @@ table tr:nth-child(even)
 {
   text-decoration: none;
 }
+
+.tester
+{
+  border: solid 3px gray;
+  margin-right: 80%;
+}
+.top-button
+{
+  margin-top: 28px;
+}
+.bottom-button
+{
+  margin-bottom: 28px;
+}

@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang = "en-US">
-
   <head>
     <meta charset = "utf-8" />
-    <title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>
       Seth LaMay | Slippery Lizards | FirstJS Page
-    </title>
-    <link href = "styles/default.css" type = "text/css" rel = "stylesheet"> 
+     </title>
+     <link href = "styles/default.css" type = "text/css" rel = "stylesheet"> 
   </head>
-  <script src="scripts/scripts.js"></script>
-   <!--<script>
-    function displayDate()
-    {
-        document.getElementById("showDate").innerHTML = Date();
-    }
-    </script>
-    -->
+     <script src="scripts/scripts.js"></script>
   <body>
     <header>
       <h1>
@@ -32,25 +25,33 @@
     </nav>
     </header>
     <main>
-      <h2>
-         First JAVASCRIPT Page
-      </h2>
-      <h3>
-        Today is: 
-        <p id ="showDate"></p>
-          <script>
-              displayDate();
-          </script>
-          <form>
-          <input type = "text" name = "name" id = "userName" placeholder = "Enter Name Here" required>
-          <br>
-          <input type = "text" name = "UserFeelings" id = "userFeelings" placeholder = "How are you feeling?" required>
-          <br>
-          <button type="button" onclick = "displayUserInfo()">Click Me!</button>
-          <!--<input type = "submit" onclick = "displayUserInfo()" return = "false">
-            !-->
-          </form>
-        </h3>
+         <h2>First JavaScript Page</h2>
+         <h3>
+             Today is: 
+             <p id="showDate"> </p> 
+             <script>
+                 displayDate()
+             </script>
+         </h3>
+             <form>
+                 <input type = "text" name = "name" id = "userName" placeholder = "Enter Name Here" required>
+                 <br>
+                 <input type = "text" name = "UserFeelings" id = "userFeelings" placeholder = "How are you feeling?" required>
+                 <br>
+                 <br/>
+                 <input type = "submit" onclick = "displayUserInfo()">
+             </form><br>
+             <div class = "tester">
+             <button type="button" class = "top-button" onclick = "giveInsult()">Recieve an insult</button><br>
+             <p></p>
+             <button type="button" onclick = "giveCompliment()">Recieve a compliment</button><br>
+             <p></p>
+             <button type="button" onclick = "calculateTax()">Calculate tax</button><br>
+             <p></p>
+             <button type="button" onclick = "sumTwoNum()">Sum of two numbers</button><br>
+             <p></p>
+             <button type="button" class = "bottom-button" onclick = "giveHonestTruth()">Get the Honest Truth</button>
+             </div><br>
     </main>
     <footer class = "footer">
       <nav>
