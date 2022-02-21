@@ -47,42 +47,94 @@
             alert("Today's gonna be your lucky day.")
         }
     }
-    function giveInsult(){
+    function giveInsult()
+    {
         num = Math.floor(Math.random() * 11);
-        if(num == 0){
+        if(num == 0)
+        {
             alert("Im sure someon told you to reach for the stars. Saldy YOU will never grab one.")
-        }else if(num == 1){
+        }
+        else if(num == 1)
+        {
             alert("Don't forget that you are worthless.")
-        }else if(num == 2){
+        }
+        else if(num == 2)
+        {
             alert("Might be time to give up on your dreams.")
-        }else if(num == 3){
+        }
+        else if(num == 3)
+        {
             alert("Pretty sure even your mom doesn't love you.")
-        }else if(num == 4){
+        
+        }else if(num == 4)
+        {
             alert("Did your dad not come back with the milk....")
-        }else if(num == 5){
+        }
+        else if(num == 5)
+        {
             alert("Always give up you can't succeed.")
-        }else if(num == 6){
+        }
+        else if(num == 6)
+        {
             alert("Your best bet is to become a highschool janitor.")
-        }else if(num == 7){
+        }
+        else if(num == 7)
+        {
             alert("Man who let you leave the house looking so ugly.")
-        }else if(num == 8){
+        }
+        else if(num == 8)
+        {
             alert("Man you really are just a walking mistake.")
-        }else if(num == 9){
+        }
+        else if(num == 9)
+        {
             alert("You really look like you need a diet.")
-        }else{
+        }
+        else
+        {
             alert("Pretty sure you have a smoothe brain.")
         }
     }
-    function sumTwoNum(){
+    function sumTwoNum()
+    {
         var num1 = prompt("Please input a number...");
         var num2 = prompt("Please input a second number...");
         var num3 = parseFloat(num1) + parseFloat(num2);
         alert("The sum of your two numbers is: " + num3);
     }
-    function giveHonestTruth(){
+    function giveHonestTruth()
+    {
        alert("Life is meaningless so live it up now.....")
     }
-    
+    function getShape()
+    {
+        validateNumber();
+    }
+    function validateNumber()
+    {
+        for(var i = 0; i < 1;)
+        {
+        var userInputNum = prompt("Slippery Lizards would like you to input a valid number between 0 and 10")
+        if(isNaN(userInputNum) || userInputNum < 0 || userInputNum > 10 || userInputNum == "")
+        { 
+            alert("Entered number is either not a number or does not meet the correct size constraints")
+        }
+        else if(userInputNum == null)
+        {
+            alert("I guess you weren't up to the challenge....")    
+            i++;
+        }
+        else
+        {
+        toString(userInputNum);
+        const shapeArray = ["Not a shape", "Line", "Digon", "Triangle", "Quadrilateral", "Pentagon","Hexagon","Heptagon", "Octagon", "Nonagon", "Decagon" ];
+        alert("The polygon that you have is: " + shapeArray[userInputNum]);
+            i++;
+        }
+    }
+    /*alert("The number you have selected is: " + userInputNum)
+    */
+    }
     
 
     
