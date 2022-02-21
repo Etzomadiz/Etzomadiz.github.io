@@ -80,8 +80,14 @@
         alert("The sum of your two numbers is: " + num3);
     }
     function giveHonestTruth(){
-        alert("Life is meaningless so live it up now.....")
+       /*alert("Life is meaningless so live it up now.....")
+       */
+       var add = function( x, y ) {
+        return ( x + y );
+        }
+        alert( add (5, 3) );
     }
+    
     
 
     
