@@ -68,3 +68,10 @@ table tr:nth-child(even)
 {
   margin-bottom: 28px;
 }
+.formButtonStyles
+{
+  color: lightblue; 
+  background-color: purple; 
+  font-family: monospace , sans-serif; 
+  border-color: silver
+}
