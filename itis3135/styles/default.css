@@ -3,6 +3,11 @@ body
   font-family: Tahoma, sans-serif;
   color: silver;
   background-color: black;
+  padding-left: 5px;
+}
+h1
+{
+  padding
 }
 
 a { color: lightblue; }
