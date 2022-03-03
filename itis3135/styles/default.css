@@ -39,20 +39,13 @@ table tr:nth-child(even)
   color: black;
 }
 
-.footer {
+footer {
   color: #CCFCCB;
   font-family: Tahoma, sans-serif;
   background-color: grey;
   border-color: #CCFCCB;
   text-align: center;
   position: static;
-}
-
-.footer:before {
-  clear: both;
-  display: block;
-  height: 120px;
-  min-height: 120px;
 }
 
 .UD

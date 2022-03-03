@@ -83,7 +83,7 @@ section
     color: black;
     transition: 0.5s ease-in-out;
 }
-.footer 
+footer 
 {
     color: #CCFCCB;
     font-family: Tahoma, sans-serif;
@@ -93,12 +93,4 @@ section
     position: static;
     padding-top: 5px;
     
-}
-  
-  .footer:before 
-{
-    clear: both;
-    display: block;
-    height: 120px;
-    min-height: 120px;
 }
