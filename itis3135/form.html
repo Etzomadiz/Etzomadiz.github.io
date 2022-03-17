@@ -16,41 +16,51 @@
           Seth LaMay's forms page
         </h2>
         <form>
+          <div class = "text-box">
             <input type = "text" name = "name" placeholder = "name (required)" required>
             <p>
-
             </p>
             <input type = "text" name = "email" placeholder="email (required)" required>
             <p></p>
             <input type = "text" name="phone-number" placeholder = "phone number (required)" required>
+          </div>
             <p>
                 Please select all that apply.
             </p>
+          
+            <div class = "checkbox">
             <label><input type = "checkbox" id = "option1" name = "option1">I have a car.</label><br>
             <label><input type = "checkbox" id = "option2" name = "option2">I have access to stable internet.</label>
+            </div>
             <p></p>
             <p>
                 How old are you?
             </p>
+            <div class = "checkbox">
              <input type="radio" id="child" name="age" value="child">
              <label for="child">17 years or Younger</label><br>
              <input type="radio" id="adult" name="age" value="adult">
              <label for="adult">18 - 64 years old</label><br>
              <input type="radio" id="senior" name="age" value="senior">
              <label for="senior">65 years or Older.</label>
+             </div>
              <p></p>
              <p>
                  Please select your sex..
              </p>
+             <div class = "text-box">
              <select>
                  <option value="" disabled selected hidden>Choose Gender</option>
                  <option value = "female">Female</option>
                  <option value = "male">Male</option>
                  <option value = "other">Other</option>
              </select>
+            </div>
              <p></p>
+             <div class = "checkbox">
              <input type = "reset" class = "formButtonStyles">
              <input type = "submit" class = "formButtonStyles">
+            </div>
         </form>
         <p></p>
       </main>
