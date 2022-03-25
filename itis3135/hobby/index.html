@@ -1,57 +1,237 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html id="top" lang="en-US">
 
 <head>
     <meta charset="utf-8" />
-    <title>
-        Seth LaMay's Hobby Website
-    </title>
+    <title>Seths LaMays Home renovation</title>
+    <link rel="shortcut icon" type="image/png" href="images/globe_favicon.png" />
     <style>
-        header {
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        title {
+            background-color: #E9FAE3;
+            margin: 0;
+            color:#342E37;
+            font-family: Verdana, sans-serif;
+            font-size: larger;
+        }
+
+        body p,
+        figure {
             text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        ul
+        {
+            padding-left: 30px;
+            margin-left: 30px;
+        }
+        li
+        {
+            padding-bottom: 3px;
         }
 
-        body {
-            background-color: grey;
-            color: aqua;
-            font-family: 'Segoe UI', sans-serif;
+        figure {
+            text-align: center;
         }
 
-        section {
-            border: solid 6px orange;
+        h1,
+        h2,
+        h3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 50px;
         }
 
         footer {
-            border: solid 3px aqua;
+            font-family: 'Courier New', Courier, monospace;
             text-align: center;
+            font-size: 90%;
+            font-weight: normal;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
-        .UD {
+        hr {
+            height: 2px;
+            background-color: #333;
+            margin-bottom: 50px;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #7D7C7A;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            padding: 20px;
+            margin-left: 50px;
             text-decoration: none;
         }
 
-        a {
-            color: orange;
+        #navbar a:hover {
+            color: #333;
+            background-color: #f2f2f2;
         }
 
-        a:hover {
-            color: black;
+        .content {
+            padding: 16px;
+        }
+
+        .button {
+            background-color: #333;
+            border-radius: 7px;
+            color: #f2f2f2;
+            padding: 5px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        div.container {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #images {
+            text-align: center;
+        }
+
+        .form {
+            padding-top: 15px;
+        }
+
+        footer a:hover {
+            color: #c7bfaa;
+            background-color: rgb(36, 36, 36);
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            color: rgb(36, 36, 36);
+            text-decoration: none;
         }
     </style>
+
+<script>
+        const $ = selector => document.querySelector(selector);
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const caption = $("#caption"); //the h2 element for the caption
+            const mainImage = $("#main_image"); //the image element for the show
+
+            //get all the <a> tags in the ul element 
+            const links = $("#image_list").querySelectorAll("a");
+
+            //process the image links
+            const imageCache = [];
+            let image = null;
+
+            for (let link of links) {
+                //preload image and copy title properties
+                image = new Image();
+                image.src = link.href;
+                image.alt = link.title;
+
+                //add image to array
+                imageCache[imageCache.length] = image;
+            }
+
+            //start the slideshow
+            let imageCounter = 0;
+
+            setInterval(() => {
+                //calculate the index for the current image
+                imageCounter = (imageCounter + 1) % imageCache.length;
+
+                //get image object from array
+                image = imageCache[imageCounter];
+
+                //set HTML img and h2 elements with values from image object
+                mainImage.src = image.src;
+                mainImage.alt = image.alt;
+                caption.textContent = image.alt;
+            },
+                2000); //2 second interval
+
+        });
+    </script>
+
 </head>
 
 <body>
     <header>
-        <h1>How To On Basic Home Repair</h1>
+        <div id="navbar">
+            <a href="#top">Home</a>
+
+            <a href="#about_link">Tools Needed</a>
+
+            <a href="#best_times_link">Everyday Maintainence</a>
+
+            <a href="#how_link">Easy upgrades</a>
+
+            <a href="#why_link">When to call a professional</a>
+        </div>
     </header>
+    <br>
+
     <main>
         <section>
-            <h2>Getting Started</h2>
-            <p>The first thing that any good homeowner will need when considering a home project is a good set of tools.
+
+            <a>
+                <h2>Home</h2>
+            </a>
+
+            <p>Welcome to my site on Home repair. I hope you find the infromationbelow to be helpful and informative.
             </p>
-            <div>There are many different kinds of tools for many different purposes but for starting out these are the
-                basic ones that all homeowners should have</div>
+
+            <figure>
+                <img src="images/HammerGuy.png" alt="Guy with hammer.">
+                <p><strong>You with a hammer.</strong></p>
+            </figure>
+
+        </section>
+
+        <br>
+
+        <a id="about_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+        <section>
+
+            <h2>Tools Needed</h2>
+
             <ul>
                 <li><strong>Hammer:</strong> This is one of the most usefule tools in you house wether its putting in a
                     nail or knocking something loose you never want to be without one. </li>
@@ -65,10 +245,112 @@
                 <li><strong>Level:</strong> This one is my top tool that I use becuase theres nothing more upseting then
                     completeing an entire project and then realising that what you have just done is not level because
                     by that point you cannot easily fix the problem.</li>
-                <li><strong></strong></li>
+                <li><strong>Pliers:</strong> These are very handy for whenever you have to pull on something small and cannot grab it with your hands.</li>    
             </ul>
+
+            <br><br>
+
+            <div id="images">
+                <div class="container">
+                    <img src="images/toolbox.png" alt="Toolbox" />
+                    <p>Your Future toolbox</p>
+                </div>
+                <div class="container">
+                    <img src="images/me.JPG" alt="A picture of me" />
+                    <p>Me vacationing in the desert</p>
+                </div>
+            </div>
+
         </section>
-    </main><br>
+
+        <br>
+        <a id="best_times_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+
+        <section>
+
+            <h2>Best Times</h2>
+
+            <p>Out of the 25 countries I've been to, I'd have to say that Australia was my favorite. I spent 3 weeks
+                exploring the East coast of Australia, all the way from Sydney, to Brisbane, even up to the Great
+                Barrier Reef.
+                I was able to go to the Australia Zoo and hangout with kangaroos and koalas. I even had the chance to go
+                scuba diving at the Great Barrier Reef while I was there.
+                These are a few pictures from my time there.
+            </p>
+
+            <br>
+
+            <div style="text-align: center;">
+
+                <ul style="display: none;" id="image_list">
+
+                    <li><a href="images/gold_coast.jpg" title="The Gold Coast in Australia"></a></li>
+                    <li><a href="images/opera_house_night.jpg" title="The famous Sydney Opera House"></a>
+                    </li>
+                    <li><a href="images/australia_palms.jpg" title="Palm trees in Australia"></a></li>
+
+                </ul>
+
+                <p><img style="text-align: center;" id="main_image" src="images/gold_coast.jpg" alt="gold_coast"></p>
+                <h3 id="caption">The Gold Coast in Australia</h3>
+
+            </div>
+        </section>
+
+        <br>
+        <a id="how_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+
+        <section>
+
+            <h2>How Could I Afford It?</h2>
+
+            <p>Unlike the United States, plane tickets in Europe are, for the most part, extremely cheap. The cheapest
+                ticket I was able to purchase during my time in Europe was a $15 round-trip ticket from London to Paris.
+                Often times me and my friends would simply look for the cheapest place to fly to and buy tickets for a 3
+                day weekend. Since they were so cheap, we could travel much more frequently and
+                it was easier to plan spur of the moment trips. Staying in hostels was another method we used to save
+                money. Hostels would be as cheap as 5-10 Euros per night.
+            </p>
+            <br>
+            <figure>
+                <img src="images/eiffel_tower.jpg" alt="A picture of the Eiffel Tower">
+                <p>The Eiffel Tower in Paris</p>
+            </figure>
+        </section>
+
+        <br>
+        <a id="why_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+
+        <section>
+
+            <h2>Why You Should Too!</h2>
+
+            <p>I've always had a passion for going new places and experiencing different cultures, so it was very
+                exciting when I found out I would be living in the United Kingdom. Getting out and seeing the world and
+                meeting new people is truly an exhilerating feeling. If you ever get the chance to travel to a new
+                place, definitely take advantage of it!</p>
+
+            <br>
+            <figure>
+                <img src="images/rome.jpg" alt="A picture of the Roman Colloseum">
+                <p>The Roman Coloseum</p>
+            </figure>
+        </section>
+
+    </main>
+    <br>
     <footer>
         Created by <a href="lamaytechnologiesinc.com/index.html">LaMay Designs INC</a> &copy;2022.<br>
         <p>
@@ -85,5 +367,4 @@
         </script>
     </footer>
 </body>
-
 </html>
