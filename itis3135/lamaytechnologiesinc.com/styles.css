@@ -11,6 +11,7 @@ a:hover { color: red; }
 h1
 {
     text-align: center;
+    
 }
 
 p
@@ -23,3 +24,4 @@ ul
     color: #9EC1A3;
     list-style-type: square;
 }
+
