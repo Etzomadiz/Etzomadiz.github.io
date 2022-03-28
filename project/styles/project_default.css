@@ -1,7 +1,7 @@
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #008148;
     font-family: Arial;
   }
   
@@ -9,7 +9,7 @@
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #2D080A;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -26,7 +26,7 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #4B2D0B;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -35,7 +35,8 @@
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #2D080A;
+    color:white;
   }
   
   /* Dropdown content (hidden by default) */
@@ -67,3 +68,40 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .UD
+  {
+    text-decoration: none;
+  }
+  footer
+{
+  text-align: center;
+}
+body
+{
+  font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #EADEDA;
+  color: #2D080A;
+}
+a { color:  #B26700; }
+a:hover { color: #008148; }
+
+hr {
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 50px;
+}
+
+#images {
+  text-align: center;
+}
+
+div.container {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+    width: 20%;
+    float: left;
+}
