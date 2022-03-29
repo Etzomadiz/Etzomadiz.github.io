@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html lang = "en-US">
+    <head>
+      <meta charset = "utf-8" />
+      <title>
+        Seth Aaron LaMay | ITIS3135 | Slippery Lizards | SlideShow
+      </title> 
+      <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+    </head>
+    <script src="scripts/slideshow.js"></script>
+    <body>
+      <div data-include="components/header-trial.html"></div>
+      <main>
+        <h1>SlideShow</h1>
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/hawaii-rainbow.jpg" style="width:100%; height: 750px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/ocean-pier.jpg" style="width:100%; height: 750px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/airbaloon-clouds.jpg" style="width:100%; height: 750px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/comit.jpg" style="width:100%; height: 750px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/space.jpg" style="width:100%; height: 750px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/tree-swamp.jpg" style="width:100%; height: 750px;">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/hawaii-rainbow.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hawaii Rainbow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ocean-pier.jpg" style="width:100%" onclick="currentSlide(2)" alt="Peir On The Ocean">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/airbaloon-clouds.jpg" style="width:100%" onclick="currentSlide(3)" alt="Airbaloon Above The Clouds">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/comit.jpg" style="width:100%" onclick="currentSlide(4)" alt="Comit Passing Over">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/space.jpg" style="width:100%" onclick="currentSlide(5)" alt="Deep Space">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tree-swamp.jpg" style="width:100%" onclick="currentSlide(6)" alt="Swamp Village">
+    </div>
+  </div>
+</div>
+      </main>
+      <div data-include="components/footer.html"></div>
+      <script src="scripts/HTMLInclude.js"></script> 
+    </body>
+  </html>
