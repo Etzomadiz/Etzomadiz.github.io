@@ -16,6 +16,7 @@ a:hover { color: red; }
 header
 {
   font-family: Tahoma, serif;
+  text-align: center;
   color: #CCFCCB;
 }
 
@@ -41,11 +42,15 @@ table tr:nth-child(even)
 footer {
   color: #CCFCCB;
   font-family: Tahoma, sans-serif;
-  background-color: grey;
+  background-color: #333;
   border-color: #CCFCCB;
   text-align: center;
   position: static;
   margin-left: -35px;
+  padding-top: 25px;
+  padding-bottom: 1px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .UD
@@ -239,9 +244,9 @@ form p
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #CCFCCB;
   padding: 2px 16px;
-  color: white;
+  color: Black;
 }
 
 .row:after {
