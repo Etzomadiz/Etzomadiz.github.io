@@ -1,5 +1,5 @@
     function displayDate() {
-        document.getElementById("showDate").innerHTML = Date();
+        document.getElementById("showDate").innerHTML = "Today is: " + Date();
     }
     
     function displayUserInfo() {
@@ -115,7 +115,7 @@
         for(var i = 0; i < 1;)
         {
         var userInputNum = prompt("Slippery Lizards would like you to input a valid number between 0 and 10")
-        if(isNaN(userInputNum) || userInputNum < 0 || userInputNum > 10 || userInputNum == "")
+        if(isNaN(userInputNum) || userInputNum < -10 || userInputNum > 10 || userInputNum == "")
         { 
             alert("Entered number is either not a number or does not meet the correct size constraints")
         }
@@ -128,7 +128,7 @@
         {
         toString(userInputNum);
         const shapeArray = ["Not a shape", "Line", "Digon", "Triangle", "Quadrilateral", "Pentagon","Hexagon","Heptagon", "Octagon", "Nonagon", "Decagon" ];
-        alert("The polygon that you have is: " + shapeArray[userInputNum]);
+        alert("The polygon that you have is: " + shapeArray[Math.abs(userInputNum)]);
             i++;
         }
     }
