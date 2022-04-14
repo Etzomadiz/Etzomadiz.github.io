@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $("#slider").bxSlider({
-        randomStart: true,
         auto: true,
         pagerSelector: '#id_pager',
+        randomStart: true,
         pagerType: 'short',
         captions: true,
         pause: 3000,
