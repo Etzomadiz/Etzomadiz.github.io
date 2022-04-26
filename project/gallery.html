@@ -15,7 +15,31 @@
         <h1>Gallery Page</h1>
 <!-- Container for the image gallery -->
 <div class="container">
+<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/FamilyMeeting.jpg" style="width:100%" onclick="currentSlide(1)" alt="Valentines Day Event">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/FamilyMeetingpt2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Valentines Day Event Part 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/volenteering.jpg" style="width:100%" onclick="currentSlide(3)" alt="Girls Volenteering">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/SellingCookies.jpg" style="width:100%" onclick="currentSlide(4)" alt="Girls Selling Cookies">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/TroopTrip.jpg" style="width:100%" onclick="currentSlide(5)" alt="Troop Outing">
+    </div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 5</div>
@@ -41,34 +65,13 @@
     <div class="numbertext">5 / 5</div>
       <img src="images/TroopTrip.jpg" class = "center">
   </div>
+  <hr>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+  
 
   <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="images/FamilyMeeting.jpg" style="width:100%" onclick="currentSlide(1)" alt="Valentines Day Event">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/FamilyMeetingpt2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Valentines Day Event Part 2">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/volenteering.jpg" style="width:100%" onclick="currentSlide(3)" alt="Girls Volenteering">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/SellingCookies.jpg" style="width:100%" onclick="currentSlide(4)" alt="Girls Selling Cookies">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/TroopTrip.jpg" style="width:100%" onclick="currentSlide(5)" alt="Troop Outing">
-    </div>
-  </div>
+  
 </div>
       </main>
       <div data-include="components/project_footer.html"></div>
