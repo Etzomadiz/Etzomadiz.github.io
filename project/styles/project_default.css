@@ -187,11 +187,16 @@ div.container {
 .demo:hover {
   opacity: 1;
 }
-div.accordian
-{
-  border:#222;
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
+
+/*
+Start of nonsense for the accordian
+*/
 
 
 .ui-helper-hidden {
@@ -1180,7 +1185,7 @@ a.ui-button:active,
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	color: #ffffff;
+	color: #4B2D0B;
 	text-decoration: none;
 }
 
