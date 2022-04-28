@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="LaMay-Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      Candle Delight
+    </h1>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption></caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th >TYPE</th>
+          <th >PRODUCT</th>
+          <th >FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <td><img class="tableimage" src="images/Birthday-Candles.jpg" alt="Birthday Candles"></td>
+          <td>
+            <ol>
+              <li>Comes in a range of fun, vibrant colors</li>
+              <li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+              <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+            </ol>
+        </td>
+        </tr>
+        <tr>
+            <th>Votives</th>
+            <td><img class="tableimage" src="images/voltives.jpeg" alt="Voltives"></td>
+            <td>
+              <ol>
+                <li>Inexpensive and easy to use</li>
+                <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td><img class="tableimage" src="images/taper-candles.jpg" alt="Taper Candles"></td>
+              <td>
+                <ol>
+                  <li>Commonly known as window candles</li>
+                  <li>Long, slender constructions add dimension to table tops</li>
+                </ol>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+     <!--Add the form here-->
+    <form>
+      <h3>Enter Your Name To Win a Prize!!!</h3>
+      <div class = "text-box">
+        <input type = "text" name = "name" placeholder = "name (required)" required>
+        <p></p>
+        <input type = "text" name="phone-number" placeholder = "phone number (required)" required>
+      </div>
+      <div class = "checkbox">
+        <input type = "reset" class = "formButtonStyles">
+        <input type = "submit" class = "formButtonStyles">
+       </div>
+    </form>
+   
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+    Created by <a href = "lamaytechnologiesinc.com/index.html">LaMay Designs INC</a> &copy;2022.<br>
+      <p class = "UD">
+        <a href="https://validator.w3.org/check?uri=referer"id = "validation_link_html" class = "UD">
+            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"id = "validation_link_css" class = "UD">
+            <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+    </p>
+  </footer>
+</body>
+</html>
