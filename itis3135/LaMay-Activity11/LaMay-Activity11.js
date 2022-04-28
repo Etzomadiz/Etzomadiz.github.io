@@ -4,5 +4,6 @@ $(document).ready(function() {
         event: "click",
         heightStyle: "content",
         collapsible: true
+        
     });
 });
