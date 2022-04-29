@@ -275,3 +275,13 @@ form p
   background-color: black;
 }
 
+.mySlides img
+{
+  height: 750px;
+  width: 100%;
+}
+
+.demo 
+{
+  width: 100%;
+}

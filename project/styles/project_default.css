@@ -2,6 +2,7 @@
 .navbar {
 	overflow: hidden;
 	background-color: #008148;
+	font-size: 25px;
 	font-family: Arial;
 }
 
@@ -18,7 +19,6 @@ header {
 /* Links inside the navbar */
 .navbar a {
 	float: left;
-	font-size: 25px;
 	color: white;
 	text-align: center;
 	padding: 30px 30px;
@@ -50,7 +50,6 @@ header {
 .dropdown:hover .dropbtn {
 	text-decoration-line: underline;
 	color: white;
-	font-size: 30px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -92,7 +91,7 @@ footer {
 }
 
 body {
-	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family:'Arial Narrow Bold', sans-serif;
 	background-color: #EADEDA;
 	color: #2D080A;
 }
@@ -219,17 +218,23 @@ div.container {
 	text-align: center;
 }
 
-table,
-th,
-td,
-tr {
-	border-collapse: collapse;
-	border-top: 4px solid #008148;
-	border-left: 4px solid #008148;
-	border-right: 4px solid #008148;
-	border-bottom: 4px solid #008148;
-	font-size: 40px;
+main table,
+main th,
+main td,
+main tr {
+	font-size: 25px;
 	text-align: center;
+	background-color: lightgoldenrodyellow;
+	padding-right: 10px;
+}
+main table
+{
+	border: double 3px brown ;
+	padding: 10px;
+}
+main table th
+{
+	border-bottom: solid 2px brown;
 }
 .banner-repair {
 	margin-left: -10px;
@@ -243,13 +248,17 @@ form {
 	margin-right: auto;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	border: 3px dashed #008148;
+	border: 4px double brown;
 	line-height: 35px;
 	max-width: 700px;
 	margin-bottom: 55px;
 	margin-top: 55px;
 	text-align: center;
 	font-size: 30px;
+}
+main form
+{
+	background-color: lightgoldenrodyellow;
 }
 
 .checkbox {
