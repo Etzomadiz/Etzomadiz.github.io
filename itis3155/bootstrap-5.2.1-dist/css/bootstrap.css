@@ -10910,5 +10910,55 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.myBodyStyle
+        {
+            padding-left: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+.myPersonbalFooter
+        {
+            padding-left: 15px;
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+        .adjust
+        {
+          text-align: left;
+          width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border: 3px solid;
+          line-height: 35px;
+          max-width: 600px;
+          margin-bottom: 55px;
+          margin-top: 55px;
+        }
+        .myCenter 
+        {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 250px;
+        }
+        .myIndexBody
+        {
+          text-align: center;
+        }
+        .myCenter 
+        {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 250px;
+        }
+        .myIndexBody
+        {
+          text-align: center;
+        } 
 
 /*# sourceMappingURL=bootstrap.css.map */
