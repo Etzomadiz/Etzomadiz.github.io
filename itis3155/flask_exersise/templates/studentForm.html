@@ -1,0 +1,17 @@
+{% block content %}
+<h1>Register</h1>
+<h4>Enter Student Information below</h4>
+<!--Form to request user's name-->
+<h3>Enter an Integer Value: </h3>
+    <form action="/addStudentOrganisation" method="POST">
+        <label for = "name"> Name: </label>
+        <input type = "text" id = "name" name ="name" placeholder="Enter your name:">
+        <select name="studentOrganisation" id="studentOrganisation">
+            <option value="AA">AA</option>
+            <option value="BB">BB</option>
+            <option value="CC">CC</option>
+            <option value="DD">DD</option>
+          </select>
+        <button type="sumbit" value="submit">Register</button>
+    </form>
+{% endblock %}
